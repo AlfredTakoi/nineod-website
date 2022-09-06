@@ -79,6 +79,17 @@ p {
   box-shadow: 1px 1px 4px #acabab;
 }
 
+.nav-navbar {
+  width: 100%;
+  justify-content: center;
+}
+
+.icon-user {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(177, 177, 177);
+}
+
 /* Hero */
 .hero {
   background-image: url("./../../img/image-hero.jpg");
@@ -407,34 +418,82 @@ p {
 
 /* Proefesional Blog */
 .profesional-blog {
-  /* height: 600px; */
-  padding: 100px 0px;
+  padding: 50px 0px;
+  margin-bottom: 50px;
 }
+
 .profesional-blog-title {
   width: 50%;
-  height: 500px;
-  padding-left: 115px;
+  padding-left: 100px;
 }
 
 .profesional-blog-img {
   width: 50%;
 }
 .profesional-blog-img img {
-  width: 60%;
-  z-index: 3;
+  width: 100%;
 }
 
-.profesional-blog-title h1 {
+.profesional-blog-title h1,
+.profesional-logo-title h1,
+.show-creation-title h1 {
   font-family: "kepler", serif;
   font-size: 50px;
 }
 
-.profesional-blog-title p {
+.profesional-blog-title p,
+.profesional-logo-title p,
+.show-creation-title p {
   font-family: "avenir", sans-serif;
   font-size: 19px !important;
   position: relative;
-  z-index: 3;
 }
+
+/* Profesional Logo */
+.profesional-logo {
+  background-color: #e9f5fc;
+}
+
+.profesional-logo-img {
+  object-fit: cover;
+}
+
+/* Show Creation */
+
+.show-creation-img img {
+  object-fit: cover;
+}
+
+
+/* Make Schedule */
+.make-schedule {
+  background-color: rgb(237, 237, 237);
+  padding: 95px 0px;
+}
+
+.make-schedule h3{
+  font-family: "kepler", serif;
+  font-size: 34px;
+  color: black;
+}
+
+.make-schedule p {
+  font-family: "avenir", sans-serif;
+  font-size: 18px;
+}
+
+.btn-make-schedule {
+  outline: none;
+  border:  1px solid black;
+  padding: 6px 23px;
+}
+
+/* Ask Questions */
+.faq-dropdown button{
+  outline: none;
+  border: none;
+}
+
 
 /* Footer */
 .img-footer {
@@ -460,17 +519,17 @@ footer .media-social-icon i {
   margin-right: 20px;
 }
 
-@media screen and (min-width: 1200px) {
-  .container-fluid {
-    max-width: 1220px;
-  }
-}
+/* Small for mobile */
 @media screen and (max-width: 768px) {
   .item-nav.active:hover,
   .item-nav.active,
   .item-nav,
   .item-nav:hover {
     border-top: none;
+  }
+
+  .login {
+    display: none !important;
   }
 
   .hero-body h1 {
@@ -688,18 +747,19 @@ footer .media-social-icon i {
   .profesional-blog {
     flex-direction: column;
     padding: 12px 20px;
-    height: 0px;
+    margin-bottom: 10px;
   }
 
   .profesional-blog-title {
     order: 2;
     width: 100%;
     padding: 0px;
-    justify-content: start !important;
   }
 
-  .profesional-blog-title h1 {
-    font-size: 35px;
+  .profesional-blog-title h1,
+  .profesional-logo-title h1,
+  .show-creation-title h1 {
+    font-size: 38px;
   }
 
   .profesional-blog-title p {
@@ -709,12 +769,28 @@ footer .media-social-icon i {
   .profesional-blog-img {
     width: 100%;
     margin-bottom: 30px;
-    text-align: center;
   }
 
   .profesional-blog-img img {
     position: relative !important;
     width: 90%;
+  }
+
+  .show-creation-content {
+    flex-direction: column;
+  }
+
+  .show-creation-title {
+    width: 100% !important;
+  }
+
+  .show-creation-title {
+    order: 2;
+  }
+
+  .show-creation-img img,
+  .show-creation-img {
+    width: 100% !important;
   }
 
   /* Footer */
@@ -736,5 +812,72 @@ footer .media-social-icon i {
 
   footer .media-social-icon i {
     margin-right: 10px;
+  }
+}
+
+/* Medium  For Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .website-home {
+    background-size: cover;
+    background-position: -330px 80px;
+  }
+
+  .login {
+    display: none !important;
+  }
+
+  .profesional-blog {
+    overflow-x: hidden;
+  }
+
+}
+
+/* Medium for extra Tablet */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .website-home {
+    background-size: cover;
+  }
+
+  .profesional-blog {
+    overflow-x: hidden;
+  }
+
+}
+
+/* large for laptop */
+@media screen and (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1220px;
+  }
+
+  .profesional-blog {
+    overflow-x: hidden;
+  }
+
+  .website-home {
+    background-size: cover;
+  }
+}
+
+/* Extra Large for Laptop L */
+@media screen and (min-width: 1440px) {
+  .container-fluid {
+    max-width: 2420px;
+  }
+
+  .website-home {
+    background-size: cover;
+  }
+
+  .profesional-blog-img img {
+    width: 45%;
+  }
+}
+
+/* Extra extra large */
+@media screen and (min-width: 2560px) {
+  .website-home {
+    background-size: cover;
+    background-position: 0px -150px;
   }
 }
