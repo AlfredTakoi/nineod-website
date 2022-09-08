@@ -567,7 +567,10 @@ h5 {
 /* Login page */
 
 .login-page,
-.register-page {
+.register-page,
+.login-email,
+.register-email,
+.forgot-password {
   height: 100vh;
   background-color: #0d2130;
 }
@@ -576,13 +579,21 @@ h5 {
 .login-page p,
 .register-page h1,
 .register-page p,
+.login-email h1,
+.login-email p,
+.register-email h1,
+.register-email p,
+.forgot-password h1,
+.forgot-password p,
 .forgot-password-link,
 label {
   font-family: "futura", sans-serif;
 }
 
 .login-page .atau,
-.register-page .atau {
+.register-page .atau,
+.login-email .atau,
+.register-email .atau {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid white;
@@ -591,7 +602,9 @@ label {
 }
 
 .login-page .atau span,
-.register-page .atau span {
+.register-page .atau span,
+.login-email .atau span,
+.register-email .atau span {
   background: #0d2130;
   padding: 0 10px;
 }
@@ -602,7 +615,10 @@ label {
 }
 
 .login-page-body,
-.register-page-body {
+.register-page-body,
+.login-email-body,
+.register-email-body,
+.forgot-password-body {
   width: 30%;
 }
 
@@ -992,7 +1008,10 @@ footer .media-social-icon i {
 
   /* Login Page */
   .login-page-body,
-  .register-page-body {
+  .register-page-body,
+  .login-email-body,
+  .register-email-body,
+  .forgot-password-body {
     width: 100%;
   }
 
