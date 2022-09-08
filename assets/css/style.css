@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
 @font-face {
   font-family: "avenir";
-  src: url("/font/avenir-font/Avenir\ Light.ttf");
+  src: url("/assets/font/avenir-font/Avenir\ Light.ttf");
 }
 @font-face {
   font-family: "kepler";
-  src: url("/font/Kepler/keplerstd-light.otf");
+  src: url("/assets/font/Kepler/keplerstd-light.otf");
 }
 @font-face {
   font-family: "futura";
-  src: url("/font/futura/Futura\ Light.otf");
+  src: url("/assets/font/futura/Futura\ Light.otf");
 }
 
 body {
@@ -113,7 +113,7 @@ p {
 
 /* Hero */
 .hero {
-  background-image: url("./../../img/image-hero.jpg");
+  background-image: url("./../img/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 20px;
@@ -410,12 +410,12 @@ p {
 
 /* Builder Page */
 .website-home {
-  background-image: url("./../../img/website-builder-img.jpg");
+  background-image: url("./../img/website-builder-img.jpg");
   background-size: contain;
 }
 
 .platform-home {
-  background-image: url("./../../img/platform-builder-img.jpg");
+  background-image: url("./../img/platform-builder-img.jpg");
   background-size: cover;
 }
 .website-home,
