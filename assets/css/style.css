@@ -575,12 +575,14 @@ h5 {
 .login-page h1,
 .login-page p,
 .register-page h1,
-.register-page p  {
-  font-family: "avenir", sans-serif;
+.register-page p,
+.forgot-password-link,
+label {
+  font-family: "futura", sans-serif;
 }
 
 .login-page .atau,
-.register-page .atau  {
+.register-page .atau {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid white;
@@ -608,15 +610,15 @@ h5 {
   border: none;
   background-color: #3b5998;
   font-family: "Roboto", sans-serif;
-  transition: .3s;
+  transition: 0.3s;
 }
 .btn-google {
   border: none;
   font-family: "Roboto", sans-serif;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.btn-google:hover{
+.btn-google:hover {
   background-color: rgb(25, 96, 202) !important;
 }
 
@@ -633,6 +635,19 @@ h5 {
   border: 1px solid white;
 }
 
+.btn-submit-form {
+  border: none;
+  background-color: #808e96;
+  padding: 12px 0px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  transition: .5s;
+}
+
+.btn-submit-form:hover {
+  color: #0d2130;
+}
+
 .link-close {
   position: fixed;
   touch-action: manipulation;
@@ -640,6 +655,16 @@ h5 {
   right: 60px;
   background: none;
   z-index: 100;
+}
+
+.email-input,
+.password-input {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding: 5px 0px;
+  color: white;
+  font-family: "futura", sans-serif;
 }
 
 /* Footer */
