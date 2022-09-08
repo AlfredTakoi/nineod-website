@@ -49,6 +49,10 @@ h5 {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -560,16 +564,82 @@ h5 {
   padding: 6px 23px;
 }
 
-.login-page {
-  width: 100%;
+/* Login page */
+
+.login-page,
+.register-page {
   height: 100vh;
-  background-color: black;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  z-index: 1000;
+  background-color: #0d2130;
+}
+
+.login-page h1,
+.login-page p,
+.register-page h1,
+.register-page p  {
+  font-family: "avenir", sans-serif;
+}
+
+.login-page .atau,
+.register-page .atau  {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.login-page .atau span,
+.register-page .atau span {
+  background: #0d2130;
+  padding: 0 10px;
+}
+
+.register-link,
+.login-link {
+  color: #2f4356;
+}
+
+.login-page-body,
+.register-page-body {
+  width: 30%;
+}
+
+.btn-facebook {
+  border: none;
+  background-color: #3b5998;
+  font-family: "Roboto", sans-serif;
+  transition: .3s;
+}
+.btn-google {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  transition: .3s;
+}
+
+.btn-google:hover{
+  background-color: rgb(25, 96, 202) !important;
+}
+
+.btn-facebook:hover {
+  background-color: rgb(55, 76, 121);
+}
+
+.btn-email {
+  background: transparent;
+  border: 1px solid rgb(136, 136, 136);
+  transition: 0.5s;
+}
+.btn-email:hover {
+  border: 1px solid white;
+}
+
+.link-close {
+  position: fixed;
+  touch-action: manipulation;
+  top: 53px;
+  right: 60px;
+  background: none;
+  z-index: 100;
 }
 
 /* Footer */
@@ -895,6 +965,16 @@ footer .media-social-icon i {
     order: 2;
   }
 
+  /* Login Page */
+  .login-page-body,
+  .register-page-body {
+    width: 100%;
+  }
+
+  .link-close {
+    top: 15px;
+    right: 25px;
+  }
   /* Footer */
   .footer-body {
     flex-direction: column;
