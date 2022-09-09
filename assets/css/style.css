@@ -59,27 +59,9 @@ p {
 }
 
 /* Menu Toggle Start */
-.menu {
-  width: 43px;
-  height: 43px;
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: transform 330ms ease-out;
-  display: none;
-  padding: 5px;
-  position: fixed;
-  right: 12px;
-  top: 20px;
-  z-index: 1050;
-  opacity: 0.5;
-}
 .wrapper-menu {
   width: 43px;
   height: 43px;
-  display: flex;
   background-color: white;
   flex-direction: column;
   justify-content: space-between;
@@ -94,7 +76,7 @@ p {
 }
 
 .wrapper-menu.open {
-  transform: rotate(-45deg);  
+  transform: rotate(-45deg);
 }
 
 .line-menu {
@@ -155,7 +137,6 @@ p {
   margin-bottom: 40px;
   font-size: 20px;
 }
-
 
 .pagination-section {
   position: fixed;
@@ -511,7 +492,7 @@ p {
   padding: 11px 0px;
 }
 
-/* Builder Page */
+/* Service Page */
 .website-home {
   background-image: url("./../img/website-builder-img.jpg");
   background-size: contain;
@@ -521,20 +502,29 @@ p {
   background-image: url("./../img/platform-builder-img.jpg");
   background-size: cover;
 }
+
+.services-home {
+    background-image: url('./../img/services-img.jpg');
+    background-size: contain;
+}
+
 .website-home,
-.platform-home {
+.platform-home,
+.services-home {
   background-repeat: no-repeat;
   background-position: 0 70px;
   height: 630px;
 }
 
 .website-home-body,
-.platform-home-body {
+.platform-home-body,
+.services-home-body {
   height: 630px;
 }
 
 .website-home-body h1,
-.platform-home-body h1 {
+.platform-home-body h1,
+.services-home-body h1 {
   margin-top: 100px;
   font-family: "kepler", serif;
   font-size: 60px;
@@ -549,7 +539,8 @@ p {
 }
 
 .website-home-body .description p,
-.platform-home-body p {
+.platform-home-body p,
+.services-home-body p {
   font-family: "avenir", sans-serif;
   font-size: 19px !important;
 }
@@ -756,7 +747,7 @@ label {
   padding: 12px 0px;
   color: white;
   font-family: "Roboto", sans-serif;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .btn-submit-form:hover {
@@ -1166,6 +1157,18 @@ footer .media-social-icon i {
   .item-nav:hover {
     border-top: none;
   }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .wrapper-menu {
+    display: flex;
+  }
+
+  .hero {
+    background-position: 0px 30px;
+  }
 }
 
 /* Medium for extra Tablet */
@@ -1193,10 +1196,6 @@ footer .media-social-icon i {
 
 /* Extra Large for Laptop L */
 @media screen and (min-width: 1440px) {
-  .container-fluid {
-    max-width: 2420px;
-  }
-
   .website-home,
   .platform-home {
     background-size: cover;
