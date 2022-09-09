@@ -1,24 +1,33 @@
-// $(window).scroll(function () {
-//   let wScroll = $(this).scrollTop();
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
 
-//   if (wScroll > $("#about").offset().top) {
-//     console.log("ok");
-//     $(".item-nav:nth-child(2)").toggleClass("active");
-//     $(".item-nav:nth-child(1)").removeClass("active");
-//   }
-// });
+$('.menu-toggle').click(function(){
+  $('.bar1').toggleClass('change')
+  $('.bar2').toggleClass('change')
+  $('.bar3').toggleClass('change')
+})
 
-$(window).scrollTop(goalElement.offset().top - 90);
+$('.hamburger').click(function(){
+  $('.bar').toggleClass('is-active')
+  $('.hamburger').toggleClass('is-active')
+})
+
+$('.wrapper-menu').click(function(){
+  $(this).toggleClass('open')
+  $('.mobile-nav').toggleClass('is-active')
+})
+
+$('#service-link').click(function(){
+  $('#website-link').toggleClass('d-none')
+  $('#platform-link').toggleClass('d-none')
+})
 
 $(".page-scroll").on("click", function (e) {
   const element = $(this).attr("href");
   const goalElement = $(element);
-
-  // $(window).animate({
-  //   scrollTop: goalElement.offset().top - 90,
-  // }, 1000);
-
-  // $(window).scrollTop(goalElement.offset().top - 90);
-
+  $('.wrapper-menu').toggleClass('open')
+  $('.mobile-nav').toggleClass('is-active')
+  $(window).scrollTop(goalElement.offset().top - 90);
   e.preventDefault();
 });
