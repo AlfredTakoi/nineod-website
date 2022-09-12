@@ -513,13 +513,13 @@ p {
 .services-home {
   background-repeat: no-repeat;
   background-position: 0 70px;
-  height: 630px;
+  height: 650px;
 }
 
 .website-home-body,
 .platform-home-body,
 .services-home-body {
-  height: 630px;
+  height: 650px;
 }
 
 .website-home-body h1,
