@@ -15,7 +15,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 .background-dark {
@@ -150,15 +149,27 @@ p {
   font-size: 30px;
   z-index: 100;
 }
+
 .page-item {
+  list-style-type: none;
+}
+
+.pagination-section li a,
+.pagination-section li a:link:hover,
+.pagination-section li a:visited,
+.pagination-section li a:visited:hover {
   width: 12px;
   height: 12px;
   border: 2px solid #b5b5b5;
   margin-bottom: 28px;
+  list-style-type: none;
+  display: block;
 }
 
-.page-item.active {
+.pagination-section li a.active,
+.pagination-section li a:hover {
   background-color: #b5b5b5;
+  transition: .3s;
 }
 
 .item-nav {
@@ -469,7 +480,9 @@ p {
   top: 20%;
   z-index: 5;
   font-size: 50px;
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .arrow-prev {
@@ -1068,7 +1081,7 @@ footer .media-social-icon i {
   }
 
   .arrow-next,
-  .arrow-prev{
+  .arrow-prev {
     top: 30%;
   }
 
