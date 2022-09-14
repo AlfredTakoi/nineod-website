@@ -56,7 +56,10 @@ $(window).scroll(function () {
 
   const wScroll = $(this).scrollTop();
   $(".hero").css({
-    "transform": "translate(0px, " + wScroll/-90 + "%)",
+    transform: "translate(0px, " + wScroll / -90 + "%)",
+  });
+  $(".about-image").css({
+    transform: "translate(0px, " + wScroll / -90 + "%)",
   });
 });
 
