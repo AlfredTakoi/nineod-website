@@ -1,6 +1,7 @@
 // $(document).ready(function(){
 //   $(this).scrollTop(0);
 // });
+
 $(".hamburger").click(function () {
   $(".bar").toggleClass("is-active");
   $(".hamburger").toggleClass("is-active");
@@ -29,7 +30,7 @@ $(".page-scroll").on("click", function (e) {
 
 $(window).scroll(function () {
   $(".section-row").each(function () {
-    sectionRowTop = $(this).offset().top - 100;
+    const sectionRowTop = $(this).offset().top - 100;
     if ($(window).scrollTop() > sectionRowTop) {
       $(".section-row").removeClass("active");
       ActiveId = $(this).addClass("active").attr("id");
@@ -37,7 +38,7 @@ $(window).scroll(function () {
   });
 
   $(".item-nav").each(function () {
-    thisChildrenHref = $(this).children("a").attr("href");
+    const thisChildrenHref = $(this).children("a").attr("href");
     if (thisChildrenHref === "#" + ActiveId) {
       $(".item-nav").removeClass("active");
       $(this).addClass("active");
@@ -51,6 +52,11 @@ $(window).scroll(function () {
       $(".page-item a").removeClass("active");
       $(thisChildren).addClass("active");
     }
+  });
+
+  const wScroll = $(this).scrollTop();
+  $(".hero").css({
+    "transform": "translate(0px, " + wScroll/-90 + "%)",
   });
 });
 
