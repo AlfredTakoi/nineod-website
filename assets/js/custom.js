@@ -58,9 +58,23 @@ $(window).scroll(function () {
   $(".hero").css({
     transform: "translate(0px, " + wScroll / -90 + "%)",
   });
-  $(".about-image").css({
-    transform: "translate(0px, " + wScroll / -90 + "%)",
+});
+
+
+const  maxLoad = 6
+function showEl(el) {
+  return el.removeClass("d-none");
+}
+
+$("#showMore").click(function () {
+  $(".projects-item").each(function (e) {
+    showEl($(this));
+    e.preventDefault();
   });
+});
+
+$(".projects-item").each(function (index) {
+  index < maxLoad ? showEl($(this)) : null;
 });
 
 $(".partners-body").slick({

@@ -73,9 +73,6 @@ p {
   transition: transform 330ms ease-out;
   display: none;
   padding: 5px;
-  position: fixed;
-  right: 12px;
-  top: 20px;
   z-index: 1050;
 }
 
@@ -361,6 +358,10 @@ p {
 
 .history-card {
   padding: 29px 0px;
+}
+
+.video-history {
+  object-fit: cover;
 }
 
 /* Projects */
@@ -905,6 +906,10 @@ footer .media-social-icon i {
     border-top: none;
   }
 
+  .nav-navbar{
+    display: none;
+  }
+
   .mobile-nav {
     display: flex;
   }
@@ -968,6 +973,7 @@ footer .media-social-icon i {
 
   .about-image-wrap {
     height: 230px;
+    margin-bottom: 12px;
   }
 
   .about-image {
@@ -1018,7 +1024,7 @@ footer .media-social-icon i {
   }
 
   .history-title h1 {
-    width: 70%;
+    width: 78%;
     line-height: 35px;
   }
 
@@ -1050,7 +1056,7 @@ footer .media-social-icon i {
   /* Our Clients */
 
   .our-clients-title h1 {
-    width: 70%;
+    width: 78%;
     line-height: 35px;
   }
 
@@ -1334,6 +1340,15 @@ footer .media-social-icon i {
     display: none !important;
   }
 
+  .nav-navbar,
+  .pagination-section{
+    display: none;
+  }
+
+  .pagination-section {
+    display: none;
+  }
+
   .item-nav.active:hover,
   .item-nav.active,
   .item-nav,
@@ -1349,6 +1364,25 @@ footer .media-social-icon i {
     display: flex;
   }
 
+
+  .about-image {
+    background-position: 19px 55px;
+  }
+
+  .about-text-second h1,
+  .projects-title h1 
+  {
+    width: 50%;
+  }
+
+  .history-title h1 {
+    width: 55%;
+  }
+
+  .our-clients-title h1 {
+    width: 51%;
+  }
+
   .hero {
     background-position: 0px 30px;
   }
@@ -1359,6 +1393,10 @@ footer .media-social-icon i {
   .website-home,
   .platform-home {
     background-size: cover;
+  }
+
+  .about-image {
+    background-position: 19px 55px;
   }
 
   .profesional-blog {
@@ -1375,6 +1413,10 @@ footer .media-social-icon i {
   .profesional-blog {
     overflow-x: hidden;
   }
+
+  .about-image {
+    background-position: 107px 55px;
+  } 
 }
 
 /* Extra Large for Laptop L */
@@ -1387,6 +1429,10 @@ footer .media-social-icon i {
   .profesional-blog-img img {
     width: 45%;
   }
+
+  .about-image {
+    background-position: 72px 55px;
+  } 
 }
 
 /* Extra extra large */
@@ -1396,4 +1442,8 @@ footer .media-social-icon i {
     background-size: cover;
     background-position: 0px -150px;
   }
+
+  .about-image {
+    background-position: 550px 55px;
+  } 
 }
