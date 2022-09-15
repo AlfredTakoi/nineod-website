@@ -62,7 +62,6 @@ p {
   font-size: 18px;
 }
 
-
 /* Menu Toggle Start */
 .wrapper-menu {
   width: 43px;
@@ -142,6 +141,10 @@ p {
 
 .pagination-section {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   bottom: 35%;
   left: unset;
   right: 21px;
@@ -180,7 +183,7 @@ p {
   color: black;
 }
 
-.link-nav:visited{
+.link-nav:visited {
   color: black;
 }
 
@@ -271,7 +274,7 @@ p {
 
 /* about */
 .about-image {
-  background-image: url('./../img/about-image.jpg');
+  background-image: url("./../img/about-image.jpg");
   background-size: contain;
   background-position: 117px 55px;
   background-repeat: no-repeat;
@@ -477,7 +480,8 @@ p {
 /* Partners */
 .partners {
   background-color: #ededed;
-  padding: 90px 40px;
+  padding: 90px 60px;
+  position: relative;
 }
 
 .img-partners {
@@ -500,20 +504,25 @@ p {
 .arrow-prev,
 .arrow-next {
   position: absolute;
-  top: 20%;
-  z-index: 5;
+  top: 40%;
   font-size: 50px;
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+  z-index: 100;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.4s;
+}
+
+.arrow-next:hover,
+.arrow-prev:hover {
+  text-shadow: rgb(0 0 0 / 65%) 0px 3px 5px;
 }
 
 .arrow-prev {
-  left: 0;
+  left: 30px;
 }
 
 .arrow-next {
-  right: 0;
+  right: 30px;
 }
 
 /* Contact */
@@ -928,7 +937,7 @@ footer .media-social-icon i {
     border-top: none;
   }
 
-  .nav-navbar{
+  .nav-navbar {
     display: none;
   }
 
@@ -964,7 +973,7 @@ footer .media-social-icon i {
   }
 
   .hero,
-  .about-image{
+  .about-image {
     transform: translate(0px, 0px) !important;
   }
 
@@ -1130,6 +1139,14 @@ footer .media-social-icon i {
   .arrow-next,
   .arrow-prev {
     top: 30%;
+  }
+
+  .arrow-prev {
+    left: 20px;
+  }
+  
+  .arrow-next {
+    right: 20px;
   }
 
   /* Contact */
@@ -1363,7 +1380,7 @@ footer .media-social-icon i {
   }
 
   .nav-navbar,
-  .pagination-section{
+  .pagination-section {
     display: none;
   }
 
@@ -1386,14 +1403,12 @@ footer .media-social-icon i {
     display: flex;
   }
 
-
   .about-image {
     background-position: 19px 55px;
   }
 
   .about-text-second h1,
-  .projects-title h1 
-  {
+  .projects-title h1 {
     width: 50%;
   }
 
@@ -1438,7 +1453,7 @@ footer .media-social-icon i {
 
   .about-image {
     background-position: 107px 55px;
-  } 
+  }
 }
 
 /* Extra Large for Laptop L */
@@ -1454,7 +1469,7 @@ footer .media-social-icon i {
 
   .about-image {
     background-position: 72px 55px;
-  } 
+  }
 }
 
 /* Extra extra large */
@@ -1467,5 +1482,5 @@ footer .media-social-icon i {
 
   .about-image {
     background-position: 550px 55px;
-  } 
+  }
 }
