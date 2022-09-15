@@ -2,12 +2,12 @@
 @font-face {
   font-family: 'Montserrat';
   font-weight: normal;
-  src: url('./../font/Montserrat/static/Montserrat-Medium.ttf') 
+  src: url('./../font/Montserrat/Montserrat-Medium.ttf') 
 }
 @font-face {
   font-family: 'Montserrat';
   font-weight: bold;
-  src: url('./../font/Montserrat/static/Montserrat-Bold.ttf') 
+  src: url('./../font/Montserrat/Montserrat-Bold.ttf') 
 }
 @font-face {
   font-family: 'Roboto';
