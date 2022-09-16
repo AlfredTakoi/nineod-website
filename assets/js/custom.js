@@ -38,9 +38,8 @@ $(document).ready(function () {
   }
 
   function serviceLinkDropdown() {
-    $("#service-link").click(function () {
-      $("#website-link").toggleClass("d-none");
-      $("#platform-link").toggleClass("d-none");
+    $(".mobile-nav ul li:nth-child(4)").click(function () {
+      $(this).children("ul").stop().slideToggle(400);
     });
   }
 
@@ -130,6 +129,8 @@ $(document).ready(function () {
     $(".hero").parallax({ imageSrc: "/assets/img/image-hero.jpg" });
     $(".about-image").parallax({ imageSrc: "/assets/img/about-image.jpg" });
   }
+
+ 
 
   $(window).breakpoints();
   $(window).on("lessThan-sm", function () {
