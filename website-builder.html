@@ -23,14 +23,20 @@
           <div class="line-menu half end"></div>
         </div>
         <div class="mobile-nav">
-          <a href="/#home" class="page-scroll">Home</a>
-          <a href="/#about" class="page-scroll">About</a>
-          <a href="/#projects" class="page-scroll">Projects</a>
-          <span id="service-link">Service</span>
-          <a href="website-builder.html" id="website-link" class="d-none">Website Builder</a>
-          <a href="platform-builder.html" id="platform-link" class="d-none">Platform Builder</a>
-          <a href="/#contact" class="page-scroll">Contact</a>
-          <a href="/#subscribe" class="page-scroll">Subscribe</a>
+          <ul class="ps-0">
+            <li><a href="/#home" class="page-scroll">Home</a></li>
+            <li><a href="/#about" class="page-scroll">About</a></li>
+            <li><a href="/#projects" class="page-scroll">Projects</a></li>
+            <li>
+              Service
+              <ul class="ps-0">
+                <li><a href="website-builder.html" id="website-link">Website Builder</a></li>
+                <li><a href="platform-builder.html" id="platform-link">Platform Builder</a></li>
+              </ul>
+            </li>
+            <li><a href="/#contact" class="page-scroll">Contact</a></li>
+            <li><a href="/#subcribe" class="page-scroll">Subscribe</a></li>
+          </ul>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-navbar" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000">
@@ -85,9 +91,11 @@
               Dan tingkatkan personal branding dan juga online presence Anda.
             </p>
           </div>
-          <button class="btn-buat-sekarang bg-transparent text-light py-2 px-3" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="2000">
-            Buat Sekarang
-          </button>
+          <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="2000">
+            <a href="https://api.whatsapp.com/send?phone=+628112108020&text=Hello,%20i%20want%20to%20ask%20about%20website" target="_blank" class="btn-buat-sekarang">
+              Buat Sekarang
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -426,7 +434,8 @@
       </div>
     </div>
   </footer>
-  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/jquery/jquery.js"></script>
+  <script src="./assets/js/jquery/jquery.breakpoints.min.js"></script>
   <script src="./assets/js/custom.js"></script>
   <script src="./assets/js/aos/aos.js"></script>
   <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
