@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./../font/Montserrat/Montserrat-Regular.ttf') 
+  font-family: "Montserrat";
+  src: url("./../font/Montserrat/Montserrat-Regular.ttf");
 }
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: bold;
-  src: url('./../font/Montserrat/Montserrat-Bold.ttf') 
+  src: url("./../font/Montserrat/Montserrat-Bold.ttf");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: bold;
-  src: url('./../font/Roboto/Roboto-Bold.ttf') 
+  src: url("./../font/Roboto/Roboto-Bold.ttf");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: normal;
-  src: url('./../font/Roboto/Roboto-Regular.ttf') 
+  src: url("./../font/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
@@ -34,17 +34,17 @@
 body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  animation: fadeInAnimation ease 2s;
+  animation: fadeInAnimation ease 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -57,6 +57,10 @@ body {
 
 .txt-secondary {
   color: #b4b3b1;
+}
+
+.background-info {
+  background-color: #e9f5fc;
 }
 
 .txt-secondary-solid {
@@ -161,12 +165,20 @@ p {
   left: 0;
 }
 
-.mobile-nav a,
-.mobile-nav span {
-  color: #fff;
-  font-family: "futura", sans-serif;
-  margin-bottom: 40px;
+.mobile-nav ul li {
+  list-style: none;
+  font-family: "futura", sans-serif; 
+  line-height: 70px;
+  color: white;
   font-size: 20px;
+}
+
+.mobile-nav ul li a {
+  color: white;
+}
+
+.mobile-nav ul li ul {
+  display: none;
 }
 
 .pagination-section {
@@ -322,7 +334,7 @@ p {
   font-size: 18px;
   outline: 2px solid black;
   color: black;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn-start-now:hover {
@@ -356,7 +368,7 @@ p {
   background: transparent;
   color: black;
   outline: 2px solid black;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn-learn-more:hover {
@@ -433,10 +445,6 @@ p {
 .projects-title h1 {
   width: 38%;
   line-height: 55px;
-}
-
-.projects-title p {
-  width: 55%;
 }
 
 .project-wrap {
@@ -645,6 +653,10 @@ p {
   background-image: url("./../img/platform-builder-img.jpg");
   background-size: cover;
 }
+.custome-home {
+  background-image: url("./../img/custom-web-img.jpg");
+  background-size: cover;
+}
 
 .services-home {
   background-image: url("./../img/services-img.jpg");
@@ -653,6 +665,7 @@ p {
 
 .website-home,
 .platform-home,
+.custome-home,
 .services-home {
   background-repeat: no-repeat;
   background-position: 0 70px;
@@ -661,12 +674,14 @@ p {
 
 .website-home-body,
 .platform-home-body,
+.custome-home-body,
 .services-home-body {
   height: 650px;
 }
 
 .website-home-body h1,
 .platform-home-body h1,
+.custome-home-body h1,
 .services-home-body h1 {
   margin-top: 100px;
   font-family: "kepler", serif;
@@ -683,15 +698,29 @@ p {
 
 .website-home-body .description p,
 .platform-home-body p,
+.custome-home-body p,
 .services-home-body p {
   font-family: "avenir", sans-serif;
   font-size: 19px !important;
 }
 
+.custome-home-body p,
+.custome-home-body h1 {
+  width: 70%;
+}
+
 .btn-buat-sekarang {
   letter-spacing: 2px;
   outline: none;
+  color: white;
+  padding: 11px 15px;
   border: 2px solid white;
+  transition: 0.3s;
+}
+
+.btn-buat-sekarang:hover {
+  background-color: white;
+  color: black;
 }
 
 .platform-home-body p {
@@ -738,6 +767,10 @@ p {
 
 .profesional-logo-img {
   object-fit: cover;
+}
+
+.service-image-wrap {
+  z-index: 100;
 }
 
 /* Show Creation */
@@ -829,6 +862,14 @@ h5 {
 }
 
 /* Login page */
+.login a {
+  font-family: "Roboto";
+  transition: 0.4s;
+}
+
+.login a:hover {
+  color: rgb(177, 177, 177);
+}
 
 .login-page,
 .register-page,
@@ -1073,7 +1114,7 @@ footer .media-social-icon i {
     order: 2;
   }
 
-  .about-text-button {
+  .about-button {
     justify-content: center !important;
   }
   .about-text-second {
@@ -1187,7 +1228,7 @@ footer .media-social-icon i {
   .arrow-prev {
     left: 20px;
   }
-  
+
   .arrow-next {
     right: 20px;
   }
@@ -1245,22 +1286,26 @@ footer .media-social-icon i {
   /* Website Builder Page */
 
   .website-home,
-  .platform-home {
+  .platform-home,
+  .custome-home {
     background-size: cover;
-    background-position: -330px 80px;
+    background-position: -330px 60px;
   }
 
   .website-home,
   .website-home-body,
   .platform-home,
   .platform-home-body,
+  .custome-home,
+  .custome-home-body,
   .services-home,
   .services-home-body {
     height: 520px;
   }
 
   .website-home-body h1,
-  .platform-home-body h1 {
+  .platform-home-body h1,
+  .custome-home-body h1 {
     font-size: 40px;
   }
 
@@ -1268,6 +1313,15 @@ footer .media-social-icon i {
     width: 82%;
   }
 
+  .custome-home-body h1,
+  .custome-home-body p {
+    width: 100% !important;
+  }
+  .custome-home-body h1 {
+    font-size: 35px;
+  }
+
+  .platform-home-body h1,
   .platform-home-body p {
     width: 90%;
   }
