@@ -1,8 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"); */
 @font-face {
   font-family: 'Montserrat';
-  font-weight: normal;
-  src: url('./../font/Montserrat/Montserrat-Medium.ttf') 
+  src: url('./../font/Montserrat/Montserrat-Regular.ttf') 
 }
 @font-face {
   font-family: 'Montserrat';
@@ -36,6 +34,18 @@
 body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 .background-dark {
@@ -238,11 +248,6 @@ p {
 
 /* Hero */
 .hero {
-  background-image: url("./../img/image-hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 20px;
-  background-attachment: fixed;
   height: 900px;
 }
 
@@ -294,12 +299,6 @@ p {
 
 /* about */
 .about-image {
-  background-image: url("./../img/about-image.jpg");
-  background-size: contain;
-  background-position: 117px 55px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
   height: 100%;
 }
 
@@ -321,8 +320,16 @@ p {
   font-weight: bold !important;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  outline: 2px solid black;
+  color: black;
+  transition: .3s;
 }
 
+.btn-start-now:hover {
+  background-color: #a9b2b6;
+  color: white;
+  outline-color: #a9b2b6;
+}
 .about-text-second h1 {
   width: 40%;
   line-height: 55px;
@@ -346,6 +353,16 @@ p {
   letter-spacing: 2px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  background: transparent;
+  color: black;
+  outline: 2px solid black;
+  transition: .3s;
+}
+
+.btn-learn-more:hover {
+  color: white;
+  background-color: #a9b2b6;
+  outline-color: #a9b2b6;
 }
 
 .about .box-card {
