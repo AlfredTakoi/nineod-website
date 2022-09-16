@@ -25,14 +25,20 @@
           <div class="line-menu half end"></div>
         </div>
         <div class="mobile-nav">
-          <a href="#home" class="page-scroll">Home</a>
-          <a href="#about" class="page-scroll">About</a>
-          <a href="#projects" class="page-scroll">Projects</a>
-          <span id="service-link">Service</span>
-          <a href="website-builder.html" id="website-link" class="d-none">Website Builder</a>
-          <a href="platform-builder.html" id="platform-link" class="d-none">Platform Builder</a>
-          <a href="#contact" class="page-scroll">Contact</a>
-          <a href="#subscribe" class="page-scroll">Subscribe</a>
+          <ul class="ps-0">
+            <li><a href="#home" class="page-scroll">Home</a></li>
+            <li><a href="#about" class="page-scroll">About</a></li>
+            <li><a href="#projects" class="page-scroll">Projects</a></li>
+            <li>
+              Service
+              <ul class="ps-0">
+                <li><a href="website-builder.html" id="website-link">Website Builder</a></li>
+                <li><a href="platform-builder.html" id="platform-link">Platform Builder</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact" class="page-scroll">Contact</a></li>
+            <li><a href="#subcribe" class="page-scroll">Subscribe</a></li>
+          </ul>
         </div>
         <ul class="nav-navbar me-auto mb-2 mb-lg-0 nav" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000">
           <li class="nav-item mx-2 mt-4 pt-2 px-2 item-nav active">
@@ -70,7 +76,7 @@
       </div>
     </nav>
   </header>
-  <section class="section-row hero" id="home"  data-parallax="scroll" data-image-src="/assets/img/image-hero.jpg">
+  <section class="section-row hero" id="home" data-parallax="scroll" data-image-src="/assets/img/image-hero.jpg">
     <div class="container">
       <div class="hero-body d-flex flex-column justify-content-center text-center align-items-center text-white" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
         <h1 class="text-uppercase fw-bold mb-4">
@@ -131,7 +137,7 @@
               <i class="fas fa-check-circle txt-secondary-solid fs-3 me-3"></i>
               <span class="fs-5 txt-primary">Competitive Price</span>
             </div>
-            <div class="d-flex justify-content-start" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+            <div class="about-button d-flex justify-content-start" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
               <a href="https://api.whatsapp.com/send?phone=+628112108020&text=Hello,%20i%20want%20to%20ask%20about%20website" target="_blank" class="btn-start-now text-uppercase fw-bold rounded-0">
                 start now
               </a>
@@ -158,7 +164,7 @@
               We're provide a service to build a custom web app to match with
               our client needs or business process. Specially made for you.
             </p>
-            <a href="" class="btn-learn-more text-uppercase fw-bold ">
+            <a href="custom-web-app.html" class="btn-learn-more text-uppercase fw-bold ">
               learn more
             </a>
           </div>
@@ -441,20 +447,22 @@
     </div>
   </section>
   <section class="team py-4" id="team">
-    <div class="d-flex flex-column justify-content-center align-items-center text-center">
-      <h1 class="fw-bold text-black mb-3" data-aos="fade-in" data-aos-duration="3000">
-        Meet The
-        <span class="txt-secondary">Team</span>
-      </h1>
-      <img src="./assets/img/Pa_Elvin.png" alt="pa-elvin-img" class="img-fluid img-team mb-3" />
-      <i class="fw-semibold fs-5">Elvin Alvian</i>
-      <div class="d-inline mb-3">
-        <a href=""><img src="./assets/img/upwork-1_edited.png" alt="upwork" class="icon me-1" /></a>
-        <a href=""><img src="./assets/img/linkedin_edited_edited_edited.png" alt="upwork" class="icon" /></a>
+    <div class="container">
+      <div class="d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="fw-bold text-black mb-3" data-aos="fade-in" data-aos-duration="3000">
+          Meet The
+          <span class="txt-secondary">Team</span>
+        </h1>
+        <img src="./assets/img/Pa_Elvin.png" alt="pa-elvin-img" class="img-fluid img-team mb-3" />
+        <i class="fw-semibold fs-5">Elvin Alvian</i>
+        <div class="d-inline mb-3">
+          <a href=""><img src="./assets/img/upwork-1_edited.png" alt="upwork" class="icon me-1" /></a>
+          <a href=""><img src="./assets/img/linkedin_edited_edited_edited.png" alt="upwork" class="icon" /></a>
+        </div>
+        <p class="fw-light">
+          FullStack Ruby on Rails Developer with Responsive Design experience
+        </p>
       </div>
-      <p class="fw-light w-75">
-        FullStack Ruby on Rails Developer with Responsive Design experience
-      </p>
     </div>
   </section>
   <section class="section-row contact py-5" id="contact">
@@ -543,7 +551,6 @@
   </footer>
   <script src="./assets/js/jquery/jquery.js"></script>
   <script src="./assets/js/jquery/jquery.breakpoints.min.js"></script>
-  <script src="./assets/js/jquery/jquery.lazy.min.js"></script>
   <script src="./assets/js/slick/slick.js"></script>
   <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
   <script src="./assets/js/aos/aos.js"></script>
