@@ -83,11 +83,6 @@ $(document).ready(function () {
           $(thisChildren).addClass("active");
         }
       });
-
-      const wScroll = $(this).scrollTop();
-      $(".hero").css({
-        transform: "translate(0px, " + wScroll / -90 + "%)",
-      });
     });
   }
 
@@ -131,10 +126,15 @@ $(document).ready(function () {
     });
   }
 
+  function parallaxFixedBackground() {
+    $(".hero").parallax({ imageSrc: "/assets/img/image-hero.jpg" });
+    $(".about-image").parallax({ imageSrc: "/assets/img/about-image.jpg" });
+  }
+
   $(window).breakpoints();
   $(window).on("lessThan-sm", function () {
     btnShowMoreProjectSm();
-    hamburgerMenu();  
+    hamburgerMenu();
     wrapperMenu();
     serviceLinkDropdown();
     partnersBody();
@@ -146,5 +146,6 @@ $(document).ready(function () {
     navbarActiveScroll();
     partnersBody();
     boxClients();
+    parallaxFixedBackground();
   });
 });
