@@ -44,7 +44,7 @@ $(document).ready(function () {
   }
 
   function paginationSectionScroll() {
-    $(".page-scroll").on("click", function (e) {
+    $(".page-scroll").click(function (e) {
       const element = $(this).attr("href");
       const goalElement = $(element);
       $("html, body").animate({
@@ -54,6 +54,14 @@ $(document).ready(function () {
       $(".mobile-nav").toggleClass("is-active");
       e.preventDefault();
     });
+    $(".page-item a").click(function(e){
+      const element = $(this).attr("href");
+      const goalElement = $(element);
+      $("html, body").animate({
+        scrollTop: goalElement.offset().top - 70,
+      });
+      e.preventDefault();
+    })
   }
 
   function navbarActiveScroll() {
@@ -129,8 +137,6 @@ $(document).ready(function () {
     $(".hero").parallax({ imageSrc: "/assets/img/image-hero.jpg" });
     $(".about-image").parallax({ imageSrc: "/assets/img/about-image.jpg" });
   }
-
- 
 
   $(window).breakpoints();
   $(window).on("lessThan-sm", function () {
