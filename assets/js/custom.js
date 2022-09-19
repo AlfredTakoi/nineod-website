@@ -54,14 +54,14 @@ $(document).ready(function () {
       $(".mobile-nav").toggleClass("is-active");
       e.preventDefault();
     });
-    $(".page-item a").click(function(e){
+    $(".page-item a").click(function (e) {
       const element = $(this).attr("href");
       const goalElement = $(element);
       $("html, body").animate({
         scrollTop: goalElement.offset().top - 70,
       });
       e.preventDefault();
-    })
+    });
   }
 
   function navbarActiveScroll() {
@@ -114,10 +114,22 @@ $(document).ready(function () {
         },
       ],
     });
+  }
+
+  function btnHoverNextPrev() {
     $(".arrow-prev").mouseenter(function () {
       $(".partners-body").slick("slickPrev");
     });
     $(".arrow-next").mouseenter(function () {
+      $(".partners-body").slick("slickNext");
+    });
+  }
+
+  function btnClickNextPrev() {
+    $(".arrow-prev").click(function () {
+      $(".partners-body").slick("slickPrev");
+    });
+    $(".arrow-next").click(function () {
       $(".partners-body").slick("slickNext");
     });
   }
@@ -146,6 +158,7 @@ $(document).ready(function () {
     serviceLinkDropdown();
     partnersBody();
     boxClients();
+    btnClickNextPrev();
   });
   $(window).on("greaterEqualTo-md", function () {
     btnShowMoreProjectMd();
@@ -154,5 +167,6 @@ $(document).ready(function () {
     partnersBody();
     boxClients();
     parallaxFixedBackground();
+    btnHoverNextPrev();
   });
 });
