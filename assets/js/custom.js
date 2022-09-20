@@ -26,7 +26,7 @@ $(document).ready(function () {
     $(".page-scroll").click(function (e) {
       const element = $(this).attr("href");
       const goalElement = $(element);
-      $("html, body").animate({
+      $("html").animate({
         scrollTop: goalElement.offset().top - 70,
       });
       $(".wrapper-menu").toggleClass("open");
@@ -176,6 +176,7 @@ $(document).ready(function () {
       dots: true,
       speed: 800,
       autoplaySpeed: 5000,
+      cssEase: 'cubic-bezier(.87,0,.13,1)',
     });
   }
 
