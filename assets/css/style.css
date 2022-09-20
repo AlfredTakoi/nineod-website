@@ -191,7 +191,7 @@ p {
   left: 131px;
   top: 2px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .arrow-dropdown.active {
@@ -206,10 +206,6 @@ p {
   font-weight: 400;
   color: black;
   font-family: "Questrial", san;
-}
-
-.link-nav:visited {
-  color: black;
 }
 
 .item-nav.active:hover,
@@ -415,6 +411,8 @@ p {
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "avenir", sans-serif;
+  font-weight: bold;
 }
 
 .button-subscribe:hover {
@@ -422,7 +420,7 @@ p {
   border-color: rgb(66, 65, 65);
 }
 
-.button-subscribe:disabled{
+.button-subscribe:disabled {
   background-color: rgb(128, 126, 126);
   border-color: rgb(128, 126, 126);
 }
@@ -1323,11 +1321,18 @@ footer .media-social-icon i {
 
   /* Website Builder Page */
 
-  .website-home,
-  .platform-home,
-  .custome-home {
+  .website-home {
     background-size: cover;
     background-position: -330px 60px;
+  }
+
+  .platform-home {
+    background-position: 0px 60px;
+  }
+
+  .custome-home {
+    background-size: cover;
+    background-position: -50px 85px;
   }
 
   .website-home,
@@ -1353,7 +1358,7 @@ footer .media-social-icon i {
 
   .custome-home-body h1,
   .custome-home-body p {
-    width: 100% !important;
+    width: 100%;
   }
   .custome-home-body h1 {
     font-size: 35px;
@@ -1505,9 +1510,23 @@ footer .media-social-icon i {
 /* Medium  For Tablet*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .website-home,
-  .platform-home {
+  .services-home {
     background-size: cover;
-    background-position: -330px 80px;
+    background-position: -330px 60px;
+  }
+
+  .platform-home {
+    background-position: 0px 60px;
+  }
+
+  .platform-home-body h1,
+  .platform-home-body p {
+    width: 90%;
+  }
+
+  .custome-home-body h1,
+  .custome-home-body p {
+    width: 100%;
   }
 
   .login {
@@ -1558,8 +1577,8 @@ footer .media-social-icon i {
   .hero {
     background-position: 0px 30px;
   }
-  
-  .contact-card-wrapper{
+
+  .contact-card-wrapper {
     padding-left: 30px;
   }
 
@@ -1575,15 +1594,25 @@ footer .media-social-icon i {
     background-size: cover;
   }
 
+  .services-home {
+    background-size: cover;
+    background-position: -200px 40px;
+  }
+
   .about-image {
     background-position: 19px 55px;
+  }
+
+  .platform-home-body h1,
+  .platform-home-body p {
+    width: 0%;
   }
 
   .profesional-blog {
     overflow-x: hidden;
   }
 
-  .contact-card-wrapper{
+  .contact-card-wrapper {
     padding-left: 120px;
   }
 
