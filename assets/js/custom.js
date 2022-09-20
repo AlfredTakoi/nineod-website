@@ -29,6 +29,7 @@ $(document).ready(function () {
       $("html").animate({
         scrollTop: goalElement.offset().top - 70,
       });
+      $(this).css("color", "black")
       $(".wrapper-menu").toggleClass("open");
       $(".mobile-nav").toggleClass("is-active");
       e.preventDefault();
