@@ -18,7 +18,7 @@ $(document).ready(function () {
   function serviceLinkDropdown() {
     $(".mobile-nav ul li:nth-child(4)").click(function () {
       $(this).children("ul").stop().slideToggle(400);
-      $('.arrow-dropdown').toggleClass("active")
+      $(".arrow-dropdown").toggleClass("active");
     });
   }
 
@@ -76,7 +76,7 @@ $(document).ready(function () {
     $(".project-wrap").slice(0, 4).show();
     $(".show-more").click(function () {
       $(".project-wrap:hidden").slice(0, 4).slideDown(500);
-      if ($(".project-wrap:hidden").length === 0) { 
+      if ($(".project-wrap:hidden").length === 0) {
         $(".show-more").fadeOut(500);
       }
     });
@@ -101,23 +101,22 @@ $(document).ready(function () {
 
   function validateSubscribe() {
     $(".button-subscribe").click(function (e) {
-      const email = $(".input-subscribe").val();
-      if (isValidEmailAddress(email)) {
+      const email = $(".input-subscribe");
+      if (isValidEmailAddress(email.val())) {
+        $(".button-subscribe").attr("disabled", true);
         setTimeout(function () {
-          $(".message-subscribe:hidden").toggleClass("d-none");
-          $(".button-subscribe").css({
-            backgroundColor: "black",
-            borderColor: "black",
-          });
+          email.val("");
+          $(".message-subscribe").removeClass("d-none");
+          $(".button-subscribe").attr("disabled", false);
         }, 2500);
-        $(".button-subscribe").css({
-          backgroundColor: "rgb(128, 126, 126)",
-          borderColor: "rgb(128, 126, 126)",
-        });
         e.preventDefault();
       } else {
         $(".input-subscribe").css("border", "1px solid red");
       }
+
+      setTimeout(function () {
+        $(".message-subscribe").addClass("d-none");
+      }, 5000);
     });
 
     $(".input-subscribe").keyup(function () {
@@ -176,7 +175,7 @@ $(document).ready(function () {
       dots: true,
       speed: 800,
       autoplaySpeed: 5000,
-      cssEase: 'cubic-bezier(.87,0,.13,1)',
+      cssEase: "cubic-bezier(.87,0,.13,1)",
     });
   }
 
