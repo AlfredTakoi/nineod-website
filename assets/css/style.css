@@ -848,10 +848,6 @@ h5 {
   transition: 0.3s;
 }
 
-.project-wrap {
-  cursor: pointer;
-}
-
 .btn-selengkapnya:hover {
   background-color: black;
   color: white;
@@ -1557,6 +1553,14 @@ footer .media-social-icon i {
   .hero {
     background-position: 0px 30px;
   }
+  
+  .contact-card-wrapper{
+    padding-left: 30px;
+  }
+
+  .contact-title-wrapper {
+    padding-right: 30px;
+  }
 }
 
 /* Medium for extra Tablet */
@@ -1572,6 +1576,14 @@ footer .media-social-icon i {
 
   .profesional-blog {
     overflow-x: hidden;
+  }
+
+  .contact-card-wrapper{
+    padding-left: 120px;
+  }
+
+  .contact-title-wrapper {
+    padding-right: 30px;
   }
 }
 
