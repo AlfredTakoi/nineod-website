@@ -187,6 +187,17 @@ p {
   display: none;
 }
 
+.arrow-dropdown {
+  left: 131px;
+  top: 2px;
+  position: absolute;
+  transition: .4s;
+}
+
+.arrow-dropdown.active {
+  transform: rotate(180deg);
+}
+
 .item-nav {
   border-top: 4px solid #fff;
 }
@@ -1283,8 +1294,7 @@ footer .media-social-icon i {
   }
 
   .contact .media-social-icon {
-    padding-left: 0px;
-    justify-content: center !important;
+    display: none !important;
   }
 
   .contact-title-wrapper {

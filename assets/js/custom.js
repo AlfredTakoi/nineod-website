@@ -18,6 +18,7 @@ $(document).ready(function () {
   function serviceLinkDropdown() {
     $(".mobile-nav ul li:nth-child(4)").click(function () {
       $(this).children("ul").stop().slideToggle(400);
+      $('.arrow-dropdown').toggleClass("active")
     });
   }
 
