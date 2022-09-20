@@ -256,10 +256,7 @@ p {
   list-style-type: none;
 }
 
-.pagination-section li a,
-.pagination-section li a:link:hover,
-.pagination-section li a:visited,
-.pagination-section li a:visited:hover {
+.pagination-section li a {
   width: 12px;
   height: 12px;
   border: 2px solid #b5b5b5;
