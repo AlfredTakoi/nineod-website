@@ -30,9 +30,13 @@
   font-family: "futura";
   src: url("/assets/font/futura/Futura\ Light.otf");
 }
+@font-face {
+  font-family: "Questrial";
+  src: url("/assets/font/Questrial/Questrial-Regular.ttf");
+}
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   animation: fadeInAnimation ease 0.5s;
   animation-iteration-count: 1;
@@ -48,7 +52,7 @@ body {
   }
 }
 
-/* Global variabel Start */
+/* Global Class Start */
 .background-dark {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -97,7 +101,7 @@ p {
   font-size: 18px;
 }
 
-/* Global variable End */
+/* Global Class End */
 
 /* Navbar Start */
 .wrapper-menu {
@@ -147,7 +151,6 @@ p {
   transform: rotate(-90deg) translateX(-3px);
 }
 
-
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -170,7 +173,7 @@ p {
 
 .mobile-nav ul li {
   list-style: none;
-  font-family: "futura", sans-serif; 
+  font-family: "futura", sans-serif;
   line-height: 70px;
   color: white;
   font-size: 20px;
@@ -191,6 +194,7 @@ p {
 .link-nav {
   font-weight: 400;
   color: black;
+  font-family: "Questrial", san;
 }
 
 .link-nav:visited {
@@ -395,14 +399,14 @@ p {
 .button-subscribe {
   padding: 12px 30px;
   color: white;
-  background: black;  
+  background: black;
   border: 2px solid black;
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.button-subscribe:hover{
+.button-subscribe:hover {
   background-color: rgb(66, 65, 65);
   border-color: rgb(66, 65, 65);
 }
@@ -616,8 +620,10 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-.card-contact p {
-  color: #767f82;
+.card-contact a {
+  color: rgb(85, 95, 99);
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
 }
 
 .contact .media-social-icon {
@@ -828,7 +834,7 @@ h5 {
   border: 2px solid black;
   letter-spacing: 1px;
   color: black;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .project-wrap {
@@ -874,10 +880,10 @@ h5 {
   border: 1px solid black;
   padding: 10px 23px;
   color: black;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.btn-make-schedule:hover{
+.btn-make-schedule:hover {
   background-color: black;
   color: white;
 }
@@ -1025,7 +1031,7 @@ footer {
 .footer-body p,
 .footer-body a {
   font-size: 14px;
-  color: #949494;
+  color: #646464;
   font-family: "futura", sans-serif;
 }
 
