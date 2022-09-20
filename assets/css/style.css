@@ -422,6 +422,11 @@ p {
   border-color: rgb(66, 65, 65);
 }
 
+.button-subscribe:disabled{
+  background-color: rgb(128, 126, 126);
+  border-color: rgb(128, 126, 126);
+}
+
 .input-subscribe {
   border: 2px solid black;
   border-radius: 4px 0px 0px 4px;
