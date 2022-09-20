@@ -75,7 +75,7 @@ $(document).ready(function () {
     $(".project-wrap").slice(0, 4).show();
     $(".show-more").click(function () {
       $(".project-wrap:hidden").slice(0, 4).slideDown(500);
-      if ($(".project-wrap:hidden").length === 0) {
+      if ($(".project-wrap:hidden").length === 0) { 
         $(".show-more").fadeOut(500);
       }
     });
@@ -193,6 +193,7 @@ $(document).ready(function () {
     boxClients();
     btnClickNextPrev();
     validateSubscribe();
+    paginationSectionScroll();
   });
   $(window).on("greaterEqualTo-md", function () {
     btnShowMoreProjectMd();
