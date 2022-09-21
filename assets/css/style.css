@@ -37,10 +37,10 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
-  animation: fadeInAnimation ease 0.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-height: auto !important;
+  animation: fadeInAnimation ease 0.8s;
 }
 
 @keyframes fadeInAnimation {
@@ -1090,11 +1090,6 @@ footer .media-social-icon i {
     height: 450px;
   }
 
-  .hero,
-  .about-image {
-    transform: translate(0px, 0px) !important;
-  }
-
   .hero-body .description {
     width: 100%;
   }
@@ -1128,7 +1123,7 @@ footer .media-social-icon i {
   .about-image {
     background-size: cover;
     background-attachment: scroll;
-    background-position: center -48px;
+    background-position: center -68px !important;
   }
 
   .about-text {
