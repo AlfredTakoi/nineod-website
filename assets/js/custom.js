@@ -53,7 +53,6 @@ $(document).ready(function () {
           ActiveId = $(this).addClass("active").attr("id");
         }
       });
-
       $(".item-nav").each(function () {
         const thisChildrenHref = $(this).children("a").attr("href");
         if (thisChildrenHref === "#" + ActiveId) {
@@ -61,7 +60,6 @@ $(document).ready(function () {
           $(this).addClass("active");
         }
       });
-
       $(".page-item").each(function () {
         thisChildren = $(this).children("a");
         thisChildrenHref = $(this).children("a").attr("href");
@@ -114,12 +112,10 @@ $(document).ready(function () {
       } else {
         $(".input-subscribe").css("border", "1px solid red");
       }
-
       setTimeout(function () {
         $(".message-subscribe").addClass("d-none");
       }, 5000);
     });
-
     $(".input-subscribe").keyup(function () {
       if ($(this).val() !== "") {
         $(this).css("border", "2px solid black");
@@ -187,22 +183,21 @@ $(document).ready(function () {
 
   function validateFormContact() {
     $(".btn-submit-contact").click(function (e) {
-      const input = $(".input-control-contact");
-      if (input.val() != "") {
+      $(".input-control-contact").each(function () {
+        if ($(this).val() != "") {
+          setTimeout(function () {
+            $('.input-contact-control').val("");
+            $(".message-contact").removeClass("d-none");
+          }, 2500);
+          e.preventDefault();
+        } else {
+          $(this).css("border", "1px solid red");
+        }
         setTimeout(function () {
-          input.val("");
-          $(".message-contact").removeClass("d-none");
-        }, 2500);
-        e.preventDefault();
-      } else {
-        $(".input-control-contact").css("border", "1px solid red");
-      }
-
-      setTimeout(function () {
-        $(".message-contact").addClass("d-none");
-      }, 5000);
+          $(".message-contact").addClass("d-none");
+        }, 5000);
+      });
     });
-
     $(".input-control-contact").keyup(function () {
       if ($(this).val() !== "") {
         $(this).css("border", "2px solid #b5b5b5");
