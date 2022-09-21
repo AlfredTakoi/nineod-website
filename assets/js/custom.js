@@ -29,7 +29,7 @@ $(document).ready(function () {
       $("html").animate({
         scrollTop: goalElement.offset().top - 70,
       });
-      $(this).css("color", "black")
+      $(this).css("color", "black");
       $(".wrapper-menu").toggleClass("open");
       $(".mobile-nav").toggleClass("is-active");
       e.preventDefault();
@@ -185,12 +185,13 @@ $(document).ready(function () {
     $(".about-image").parallax({ imageSrc: "/assets/img/about-image.jpg" });
   }
 
+  hamburgerMenu();
+  wrapperMenu();
+  serviceLinkDropdown();
+
   $(window).breakpoints();
   $(window).on("lessThan-sm", function () {
     btnShowMoreProjectSm();
-    hamburgerMenu();
-    wrapperMenu();
-    serviceLinkDropdown();
     partnersBody();
     boxClients();
     btnClickNextPrev();
