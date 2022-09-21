@@ -121,8 +121,8 @@ $(document).ready(function () {
     });
 
     $(".input-subscribe").keyup(function () {
-      if ($(".input-subscribe").val() !== "") {
-        $(".input-subscribe").css("border", "2px solid black");
+      if ($(this).val() !== "") {
+        $(this).css("border", "2px solid black");
       }
     });
   }
@@ -185,6 +185,31 @@ $(document).ready(function () {
     $(".about-image").parallax({ imageSrc: "/assets/img/about-image.jpg" });
   }
 
+  function validateFormContact() {
+    $(".btn-submit-contact").click(function (e) {
+      const input = $(".input-control-contact");
+      if (input.val() != "") {
+        setTimeout(function () {
+          input.val("");
+          $(".message-contact").removeClass("d-none");
+        }, 2500);
+        e.preventDefault();
+      } else {
+        $(".input-control-contact").css("border", "1px solid red");
+      }
+
+      setTimeout(function () {
+        $(".message-contact").addClass("d-none");
+      }, 5000);
+    });
+
+    $(".input-control-contact").keyup(function () {
+      if ($(this).val() !== "") {
+        $(this).css("border", "2px solid #b5b5b5");
+      }
+    });
+  }
+
   hamburgerMenu();
   wrapperMenu();
   serviceLinkDropdown();
@@ -197,6 +222,7 @@ $(document).ready(function () {
     btnClickNextPrev();
     validateSubscribe();
     paginationSectionScroll();
+    validateFormContact();
   });
   $(window).on("greaterEqualTo-md", function () {
     btnShowMoreProjectMd();
@@ -207,5 +233,6 @@ $(document).ready(function () {
     parallaxFixedBackground();
     btnHoverNextPrev();
     validateSubscribe();
+    validateFormContact();
   });
 });
