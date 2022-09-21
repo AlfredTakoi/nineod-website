@@ -649,10 +649,6 @@ p {
   font-size: 19px;
 }
 
-.contact .media-social-icon {
-  padding-left: 217px;
-}
-
 .input-control-contact {
   padding: 3px 12px;
   outline: none;
@@ -673,6 +669,11 @@ p {
   background-color: #b5b5b5;
   color: #fff;
   padding: 11px 0px;
+  transition: .3s;
+}
+
+.btn-submit-contact:hover{
+  opacity: 0.7;
 }
 
 /* Service Page */
@@ -685,7 +686,7 @@ p {
   background-image: url("./../img/platform-builder-img.jpg");
   background-size: cover;
 }
-.custome-background {
+.custom-background {
   background-image: url("./../img/custom-web-img.jpg");
   background-size: cover;
 }
@@ -1225,7 +1226,7 @@ footer .media-social-icon i {
     background-position: 0px 60px;
   }
 
-  .custome-background {
+  .custom-background {
     background-size: cover;
     background-position: -50px 85px;
   }
@@ -1243,7 +1244,7 @@ footer .media-social-icon i {
   .section-second,
   .section-third,
   .section-fourth {
-    padding: 15px 0px !important;
+    padding: 20px 0px !important;
   }
 
   .section-second-text,
@@ -1318,8 +1319,8 @@ footer .media-social-icon i {
     width: 90%;
   }
 
-  .custome-home-body h1,
-  .custome-home-body p {
+  .custom-home-body h1,
+  .custom-home-body p {
     width: 100%;
   }
 
