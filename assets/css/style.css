@@ -107,11 +107,9 @@ p {
 .py-10 {
   padding: 100px 0px;
 }
-.fs-60 {
-  font-size: 60px;
-}
-.fs-50 {
-  font-size: 50px;
+
+.w-55{
+  width: 55%;
 }
 /* Global Class End */
 
@@ -1225,6 +1223,11 @@ footer .media-social-icon i {
   .section-first-body h1 {
     margin-top: 80px;
     font-size: 40px;
+    width: 100%;
+  }
+
+  .section-first-body p {
+    width: 100%;
   }
 
   .section-second,

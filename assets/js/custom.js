@@ -1,27 +1,6 @@
 $(document).ready(function () {
   // $(this).scrollTop(0);
 
-  function hamburgerMenu() {
-    $(".hamburger").click(function () {
-      $(".bar").toggleClass("is-active");
-      $(".hamburger").toggleClass("is-active");
-    });
-  }
-
-  function wrapperMenu() {
-    $(".wrapper-menu").click(function () {
-      $(this).toggleClass("open");
-      $(".mobile-nav").toggleClass("is-active");
-    });
-  }
-
-  function serviceLinkDropdown() {
-    $(".mobile-nav ul li:nth-child(4)").click(function () {
-      $(this).children("ul").stop().slideToggle(400);
-      $(".arrow-dropdown").toggleClass("active");
-    });
-  }
-
   function paginationSectionScroll() {
     $(".page-scroll").click(function (e) {
       const element = $(this).attr("href");
@@ -199,10 +178,6 @@ $(document).ready(function () {
     });
   }
 
-  hamburgerMenu();
-  wrapperMenu();
-  serviceLinkDropdown();
-
   $(window).breakpoints();
   $(window).on("lessThan-sm", function () {
     btnShowMoreProjectSm();
@@ -210,8 +185,8 @@ $(document).ready(function () {
     boxClients();
     btnClickNextPrev();
     validateSubscribe();
-    paginationSectionScroll();
     validateFormContact();
+    paginationSectionScroll();
   });
   $(window).on("greaterEqualTo-md", function () {
     btnShowMoreProjectMd();
