@@ -35,15 +35,12 @@
   src: url("/assets/font/Questrial/Questrial-Regular.ttf");
 }
 
-html, body {
+body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
   min-height: auto !important;
   animation: fadeInAnimation ease 0.8s;
-}
-main {
-  display: none;
 }
 
 @keyframes fadeInAnimation {
