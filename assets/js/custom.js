@@ -91,35 +91,28 @@ $(document).ready(function () {
     });
   }
 
-  function isValidEmailAddress(emailAddress) {
-    var pattern = new RegExp(
-      /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
-    );
-    return pattern.test(emailAddress);
-  }
-
   function validateSubscribe() {
-    $(".button-subscribe").click(function (e) {
-      const email = $(".input-subscribe");
-      if (isValidEmailAddress(email.val())) {
+    $("#form-subscribe").validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      errorClass: "error fail-alert",
+      errorPlacement: function(error, element){},
+      submitHandler: function(form, event) { 
         $(".button-subscribe").attr("disabled", true);
         setTimeout(function () {
-          email.val("");
-          $(".message-subscribe").removeClass("d-none");
+          $('.input-subscribe').val("");
+          $(".message-subscribe").fadeIn(1000).removeClass("d-none");
           $(".button-subscribe").attr("disabled", false);
         }, 2500);
-        e.preventDefault();
-      } else {
-        $(".input-subscribe").css("border", "1px solid red");
-      }
-      setTimeout(function () {
-        $(".message-subscribe").addClass("d-none");
-      }, 5000);
-    });
-    $(".input-subscribe").keyup(function () {
-      if ($(this).val() !== "") {
-        $(this).css("border", "2px solid black");
-      }
+        setTimeout(function () {
+          $(".message-subscribe").addClass("d-none");
+        }, 6000);
+        event.preventDefault()
+       }
     });
   }
 
@@ -182,7 +175,7 @@ $(document).ready(function () {
   }
 
   function validateFormContact() {
-    $(".form").validate({
+    $("#form-contact").validate({
       rules: {
         name: "required",
         email: {
@@ -196,7 +189,7 @@ $(document).ready(function () {
       submitHandler: function(form, event) { 
         setTimeout(function () {
           $('.input-control-contact').val("");
-          $(".message-contact").removeClass("d-none");
+          $(".message-contact").fadeIn(1000).removeClass("d-none");
         }, 2500);
         setTimeout(function () {
           $(".message-contact").addClass("d-none");

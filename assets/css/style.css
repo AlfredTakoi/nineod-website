@@ -439,6 +439,10 @@ p {
   border-radius: 4px 0px 0px 4px;
 }
 
+.input-subscribe.error.fail-alert{
+  border: 1px solid red;
+}
+
 .input-subscribe:focus {
   outline: none;
   border: 2px solid black;
@@ -611,14 +615,6 @@ p {
   background-color: #fafafa;
 }
 
-.contact-card-wrapper {
-  padding-left: 217px;
-}
-
-.contact-title-wrapper {
-  padding-right: 145px;
-}
-
 .card-contact {
   width: 355px;
   padding: 33px 40px;
@@ -660,19 +656,29 @@ p {
   background-color: #b5b5b5;
   color: #fff;
   padding: 11px 0px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.btn-submit-contact:hover{
+.btn-submit-contact:hover {
   opacity: 0.7;
 }
 
-.input-control-contact.error.fail-alert{
+.input-control-contact.error.fail-alert {
   border: 1px solid red;
 }
 
-label.error.fail-alert{
+label.error.fail-alert {
   color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.contact .media-social-icon {
+  width: 355px;
+}
+
+.message-contact {
+  font-size: 16px;
 }
 
 /* Service Page */
@@ -990,7 +996,7 @@ footer .media-social-icon i {
   .hero-body .description {
     width: 100%;
   }
-  
+
   .hero-body .description p {
     font-size: 16px;
     line-height: 22px;
@@ -1161,25 +1167,13 @@ footer .media-social-icon i {
   }
 
   /* Contact */
-
-  .contact {
-    padding: 36px 0px;
-  }
   .card-contact {
     width: 100%;
-  }
-
-  .contact-card-wrapper {
-    margin-bottom: 40px;
   }
 
   .contact-card-wrapper,
   .contact-title-wrapper {
     width: 100% !important;
-  }
-
-  .contact-card-wrapper {
-    padding-left: 0px;
   }
 
   .contact .media-social-icon {
@@ -1192,9 +1186,6 @@ footer .media-social-icon i {
 
   .card-contact:not(:last-child) {
     margin-bottom: 20px;
-  }
-  .contact {
-    padding: 0px 20px;
   }
 
   .input-group-contact {
@@ -1360,14 +1351,6 @@ footer .media-social-icon i {
   .hero {
     background-position: 0px 30px;
   }
-
-  .contact-card-wrapper {
-    padding-left: 30px;
-  }
-
-  .contact-title-wrapper {
-    padding-right: 30px;
-  }
 }
 
 /* Medium for extra Tablet */
@@ -1393,14 +1376,6 @@ footer .media-social-icon i {
 
   .profesional-blog {
     overflow-x: hidden;
-  }
-
-  .contact-card-wrapper {
-    padding-left: 120px;
-  }
-
-  .contact-title-wrapper {
-    padding-right: 30px;
   }
 }
 

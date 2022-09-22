@@ -484,73 +484,78 @@
     </div>
   </section>
   <section class="section-row contact py-5" id="contact">
-    <div class="row">
-      <div class="contact-card-wrapper col-md-6">
-        <div class="card-contact d-flex align-items-center background-secondary" data-aos="fade-right" data-aos-duration="2000">
-          <i class="fas fa-phone fs-1"></i>
-          <div class="d-inline w-100">
-            <h1 class="fw-bold mb-0 fs-5">Phone</h1>
-            <a href="tel:+62%20811-2108-020" class="m-0">+62 811-2108-020</a>
-          </div>
-        </div>
-        <div class="card-contact d-flex align-items-center background-secondary" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
-          <i class="far fa-envelope fs-1"></i>
-          <div class="d-inline w-100">
-            <h1 class="fw-bold mb-0 fs-5">Email</h1>
-            <a href="mailto:admin@nineod.com" class="m-0">admin@nineod.com</a>
-          </div>
-        </div>
-        <div class="card-contact d-flex align-items-center background-secondary mb-5" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600">
-          <i class="fa fa-map-marker-alt fs-1"></i>
-          <div class="d-inline w-100">
-            <h1 class="fw-bold mb-0 fs-5">Address</h1>
-            <a href="https://goo.gl/maps/PYH4nFhexuqaSpYR9" target="_blank" class="m-0">Jl. Sentra Raya No. 11</a>
-          </div>
-        </div>
-        <div class="media-social-icon d-flex justify-content-start">
-          <a href="https://www.facebook.com/nineod/" target="_blank" class="text-secondary"><i class="fab fa-facebook-f me-4 fs-5"></i></a>
-          <a href="https://twitter.com/nine_od" target="_blank" class="text-secondary"><i class="fab fa-twitter me-4 fs-5"></i></a>
-          <a href="https://www.youtube.com/channel/UC5i3z--8T9DPZR7JcGye94w" target="_blank" class="text-secondary"><i class="fab fa-youtube me-4 fs-5" aria-hidden="true"></i></a>
-          <a href="https://www.instagram.com/nineodev/" target="_blank" class="text-secondary"><i class="fab fa-instagram fs-5"></i></a>
-        </div>
-      </div>
-      <div class="contact-title-wrapper col-md-6 d-flex flex-column justify-content-end">
-        <div class="contact-title">
-          <h1 class="fw-bold text-black mb-0 w-100" data-aos="fade-in" data-aos-duration="3000">
-            <span class="txt-secondary">Interested</span>
-            in discussing?
-          </h1>
-          <p class="txt-primary" data-aos="fade-in" data-aos-duration="3000">
-            We're open for any sugeestion or just to have a chat
-          </p>
-        </div>
-        <form action="" class="form row gy-3" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="500">
-          <div class="col-md-12">
-            <div class="row gy-3">
-              <div class="col-md-6">
-                <p class="mb-0"><input type="text" class="input-control-contact txt-primary w-100" name="name" placeholder="Name" required /></p>
-              </div>
-              <div class="col-md-6">
-                <p class="mb-0"><input type="email" class="input-control-contact txt-primary w-100" name="email" placeholder="Email" required /></p>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="contact-card-wrapper col-md-6 d-flex flex-column align-items-center">
+          <div class="card-contact d-flex align-items-center background-secondary" data-aos="fade-right" data-aos-duration="2000">
+            <i class="fas fa-phone fs-1"></i>
+            <div class="d-inline w-100">
+              <h1 class="fw-bold mb-0 fs-5">Phone</h1>
+              <a href="tel:+62%20811-2108-020" class="m-0">+62 811-2108-020</a>
             </div>
           </div>
-          <div class="col-md-12">
-            <p class="mb-0"><input type="text" class="input-control-contact w-100 txt-primary" name="subject" placeholder="Subject" required /></p>
+          <div class="card-contact d-flex align-items-center background-secondary" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
+            <i class="far fa-envelope fs-1"></i>
+            <div class="d-inline w-100">
+              <h1 class="fw-bold mb-0 fs-5">Email</h1>
+              <a href="mailto:admin@nineod.com" class="m-0">admin@nineod.com</a>
+            </div>
           </div>
-          <div class="col-md-12">
-            <p class="mb-0"><textarea name="" id="" cols="30" rows="7" class="input-control-contact w-100 txt-primary" name="message" placeholder="Type your message here..." required></textarea></p>
+          <div class="card-contact d-flex align-items-center background-secondary mb-4" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600">
+            <i class="fa fa-map-marker-alt fs-1"></i>
+            <div class="d-inline w-100">
+              <h1 class="fw-bold mb-0 fs-5">Address</h1>
+              <a href="https://goo.gl/maps/PYH4nFhexuqaSpYR9" target="_blank" class="m-0">Jl. Sentra Raya No. 11</a>
+            </div>
           </div>
-          <div class="col-md-12 mb-3">
-            <button class="w-100 text-uppercase fw-bold border-0 btn-submit-contact">
-              submit
-            </button>
+        </div>
+        <div class="contact-title-wrapper col-md-6">
+          <div class="contact-title">
+            <h1 class="fw-bold text-black mb-0 w-100" data-aos="fade-in" data-aos-duration="3000">
+              <span class="txt-secondary">Interested</span>
+              in discussing?
+            </h1>
+            <p class="txt-primary" data-aos="fade-in" data-aos-duration="3000">
+              We're open for any sugeestion or just to have a chat
+            </p>
           </div>
-          <p class="text-center message-contact d-none">Thanks for submitting!</p>
-        </form>
+          <form action="" id="form-contact" class="row gy-3" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="500">
+            <div class="col-md-12">
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <p class="mb-0"><input type="text" class="input-control-contact txt-primary w-100" name="name" placeholder="Name" required /></p>
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-0"><input type="email" class="input-control-contact txt-primary w-100" name="email" placeholder="Email" required /></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p class="mb-0"><input type="text" class="input-control-contact w-100 txt-primary" name="subject" placeholder="Subject" required /></p>
+            </div>
+            <div class="col-md-12">
+              <p class="mb-0"><textarea name="" id="" cols="30" rows="7" class="input-control-contact w-100 txt-primary" name="message" placeholder="Type your message here..." required></textarea></p>
+            </div>
+            <div class="col-md-12">
+              <button class="w-100 text-uppercase fw-bold border-0 btn-submit-contact">
+                submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 ">
+          <div class="media-social-icon d-flex justify-content-center">
+            <a href="https://www.facebook.com/nineod/" target="_blank" class="text-secondary"><i class="fab fa-facebook-f me-4 fs-5"></i></a>
+            <a href="https://twitter.com/nine_od" target="_blank" class="text-secondary"><i class="fab fa-twitter me-4 fs-5"></i></a>
+            <a href="https://www.youtube.com/channel/UC5i3z--8T9DPZR7JcGye94w" target="_blank" class="text-secondary"><i class="fab fa-youtube me-4 fs-5" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/nineodev/" target="_blank" class="text-secondary"><i class="fab fa-instagram fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="text-center message-contact mb-0 d-none">Thanks for submitting!</p>
+        </div>
       </div>
     </div>
-
   </section>
   <footer>
     <div class="container">
