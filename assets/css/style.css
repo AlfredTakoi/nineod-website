@@ -770,6 +770,15 @@ label.error.fail-alert {
   border: 8px solid white;
 }
 
+.search-icon {
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.search-icon:hover{
+  opacity: .5;
+}
+
 /* Make Schedule */
 .make-schedule {
   background-color: rgb(237, 237, 237);
@@ -1166,17 +1175,12 @@ footer .media-social-icon i {
     width: 100%;
   }
 
-  .contact-card-wrapper,
-  .contact-title-wrapper {
+  .contact-card-wrapper{
     width: 100% !important;
   }
 
   .contact .media-social-icon {
     display: none !important;
-  }
-
-  .contact-title-wrapper {
-    padding-right: 0px;
   }
 
   .card-contact:not(:last-child) {
