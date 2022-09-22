@@ -182,26 +182,27 @@ $(document).ready(function () {
   }
 
   function validateFormContact() {
-    $(".btn-submit-contact").click(function (e) {
-      $(".input-control-contact").each(function () {
-        if ($(this).val() != "") {
-          setTimeout(function () {
-            $('.input-contact-control').val("");
-            $(".message-contact").removeClass("d-none");
-          }, 2500);
-          e.preventDefault();
-        } else {
-          $(this).css("border", "1px solid red");
-        }
+    $(".form").validate({
+      rules: {
+        name: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        subject: "required",
+        address: "required"
+      },
+      errorClass: "error fail-alert",
+      submitHandler: function(form, event) { 
+        setTimeout(function () {
+          $('.input-control-contact').val("");
+          $(".message-contact").removeClass("d-none");
+        }, 2500);
         setTimeout(function () {
           $(".message-contact").addClass("d-none");
         }, 5000);
-      });
-    });
-    $(".input-control-contact").keyup(function () {
-      if ($(this).val() !== "") {
-        $(this).css("border", "2px solid #b5b5b5");
-      }
+        event.preventDefault()
+       }
     });
   }
 
