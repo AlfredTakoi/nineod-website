@@ -105,7 +105,7 @@ p {
   padding: 100px 0px;
 }
 
-.w-55{
+.w-55 {
   width: 55%;
 }
 /* Global Class End */
@@ -434,7 +434,7 @@ p {
   border-radius: 4px 0px 0px 4px;
 }
 
-.input-subscribe.error.fail-alert{
+.input-subscribe.error.fail-alert {
   border: 1px solid red;
 }
 
@@ -772,11 +772,48 @@ label.error.fail-alert {
 
 .search-icon {
   cursor: pointer;
-  transition: .3s ease;
+  transition: 0.3s ease;
+  right: 12px;
+  top: 15px;
 }
 
-.search-icon:hover{
-  opacity: .5;
+.accordion-button.focus{
+  box-shadow: none;
+}
+.search-area {
+  margin-bottom: 70px;
+}
+.search-icon.active {
+  left: 12px;
+  width: 30px;
+}
+
+.btn-close {
+  right: 0px;
+  top: 11px;
+  display: none;
+}
+
+.btn-close.active{
+  display: block;
+  transition: .6s ease;
+  width: 30px;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.input-search {
+  width: 0;
+  opacity: 0;
+  transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.input-search.active {
+  width: 100%;
+  opacity: 1;
+  padding: 10px 40px;
 }
 
 /* Make Schedule */
@@ -1175,7 +1212,7 @@ footer .media-social-icon i {
     width: 100%;
   }
 
-  .contact-card-wrapper{
+  .contact-card-wrapper {
     width: 100% !important;
   }
 
