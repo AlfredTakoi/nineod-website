@@ -172,12 +172,14 @@
   </section>
   <section class="ask-questions py-5">
     <div class="container">
-      <div class="ask-questions-title m-5">
-        <h3 class="text-uppercase text-center">faq</h3>
-        <i class="fas fa-search search-icon float-end"></i>
+      <h3 class="text-uppercase text-center">faq</h3>
+      <div class="search-area position-relative">
+        <input type="text" class="input-search float-end form-control" placeholder="Looking for something?">
+        <i class="fas fa-search search-icon position-absolute"></i>
+        <button class="position-absolute btn-close" type="reset"></button>
       </div>
       <div class="accordion accordion-flush faq-dropdown" id="accordionFlushExample">
-        <div class="accordion-item">
+        <div class="accordion-item" id="accordion-item-0">
           <h2 class="fw-bold" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               PEMESANAN
@@ -214,7 +216,9 @@
                   Melakukan konfirmasi pembayaran melalui admin Whatsapp.
                 </li>
               </ul>
-              <li>Untuk saat ini belum tersedia.</li>
+              <span class="fw-semibold">APAKAH TERSEDIA PEMBAYARAN BULANAN?</span>
+              <ul>
+                <li>Untuk saat ini belum tersedia.</li>
               </ul>
               <span class="fw-semibold">PEMBAYARANNYA MELALUI APA?</span>
               <ul>
@@ -247,7 +251,7 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" id="accordion-item-1">
           <h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
               TECHNICAL FLOW
@@ -348,13 +352,13 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" id="accordion-item-2">
           <h2 class="accordion-header" id="flush-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
               GENERAL INFORMATION
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse " aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               <span class="fw-semibold">BERAPA HARGA UNTUK SETIAP PAKET?</span>
               <ul>
@@ -407,13 +411,15 @@
               </ul>
               <span class="fw-semibold">‌‌‌‌APAKAH SULIT PROSES PENGGUNAAN LAYANAN NINEOD?</span>
               <ul>
-                <li>
-                  Tentu tidak, karena kami memliki tim yang kompeten.
-                </li>
+                <li>Tentu tidak, karena kami memliki tim yang kompeten.</li>
               </ul>
             </div>
           </div>
         </div>
+      </div>
+      <div class="message-empty">
+        <p class="mb-0">Maaf, tidak ada hasil yang cocok dengan kriteria pencarian Anda.</p>
+        <p class="mb-0">Silakan coba lagi dengan kata kunci lain.</p>
       </div>
     </div>
   </section>
@@ -424,14 +430,16 @@
           Nineod &copy; 2021 All Rights Reserved
         </p>
         <p class="fw-light text-center m-0">
-          <a href="#" class="text-decoration-none">Proudly created</a>with <img src="./assets/img/love.svg" alt="love-footer" class="img-footer" /> by
+          <a href="#" class="text-decoration-none">Proudly created</a>
+          with
+          <img src="./assets/img/love.svg" alt="love" class="img-footer" /> by
           <a href="https://www.nineod.com/" class="text-decoration-none">nineod</a>
         </p>
         <div class="media-social-icon d-flex justify-content-end">
-          <a href="" class="text-secondary"><i class="fab fa-facebook-f fs-5"></i></a>
-          <a href="" class="text-secondary"><i class="fab fa-twitter fs-5"></i></a>
-          <a href="" class="text-secondary"><i class="fab fa-instagram fs-5"></i></a>
-          <a href="" class="text-secondary"><i class="fab fa-linkedin-in fs-5"></i></a>
+          <a href="https://www.facebook.com/nineod/" target="_blank" class="text-secondary"><i class="fab fa-facebook-f fs-6"></i></a>
+          <a href="https://twitter.com/nineodofficial" target="_blank" class="text-secondary"><i class="fab fa-twitter fs-6"></i></a>
+          <a href="https://www.youtube.com/channel/UC5i3z--8T9DPZR7JcGye94w" target="_blank" class="text-secondary"><i class="fab fa-youtube fs-6"></i></a>
+          <a href="https://www.instagram.com/nineodofficial/" target="_blank" class="text-secondary"><i class="fab fa-instagram fs-6"></i></a>
         </div>
       </div>
     </div>
