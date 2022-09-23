@@ -11,19 +11,20 @@ $(document).ready(function () {
   });
 
   var showError = true;
+  $(".message-empty").hide();
   $(".input-search").on("keyup", function () {
     const value = $(this).val().toLowerCase();
     if (value === "") {
       $(".message-empty").hide();
+    } else if (showError) {
+      $(".message-empty").show();
     }
     $(".accordion-item").each(function () {
       const htxt = $(this).text().toString().toLowerCase();
       const accIndex = $(this).index();
       if (htxt.indexOf(value) > -1) {
         $(this).show();
-        $("#accordion-item-" + accIndex)
-          .attr("filter-key", value)
-          .show();
+        $("#accordion-item-" + accIndex).attr("filter-key", value).show();
         showError = false;
       } else if ($(".accordion-item:visible").length === 0) {
         $(".message-empty").show();
@@ -32,8 +33,5 @@ $(document).ready(function () {
         $(".message-empty").hide();
       }
     });
-    if (showError) {
-      $(".message-empty").hide();
-    }
   });
 });
