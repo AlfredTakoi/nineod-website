@@ -9,8 +9,6 @@ $(document).ready(function () {
         scrollTop: goalElement.offset().top - 70,
       });
       $(this).css("color", "black");
-      $(".wrapper-menu").toggleClass("open");
-      $(".mobile-nav").toggleClass("is-active");
       e.preventDefault();
     });
     $(".page-item a").click(function (e) {
